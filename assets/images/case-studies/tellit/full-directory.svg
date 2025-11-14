@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" rx="32" fill="#E8E4DE"/>
+  <rect x="60" y="60" width="880" height="1280" rx="24" fill="none" stroke="#9CAF88" stroke-width="4" stroke-dasharray="22 22"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#2A2A2A" font-family="Inter, Arial, sans-serif" font-size="36">Replace with full directory visual</text>
+  <text x="50%" y="55%" text-anchor="middle" fill="#6B8E65" font-family="Inter, Arial, sans-serif" font-size="22">assets/images/case-studies/tellit/full-directory.svg</text>
+</svg>
+

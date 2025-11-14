@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellit - David Budzik</title>
+    <link rel="stylesheet" href="css/case-study-tellit.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <div class="logo">David Budzik</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="project-meta">
+            <div class="meta-item">
+                <div class="meta-label">Project Type</div>
+                <div class="meta-value">UI Concept & Interactive Prototype</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Role</div>
+                <div class="meta-value">Product Designer & Front-end Developer</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Timeline</div>
+                <div class="meta-value">2 weeks (2025)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Disciplines</div>
+                <div class="meta-value">UI Design, Design Systems, React Development</div>
+            </div>
+        </div>
+
+        <h1 class="case-title">Tellit</h1>
+        <p class="case-intro">
+            A modern startup directory platform with sophisticated filtering, search, and company 
+            card layouts. Designed in Figma and built as an interactive React prototype with 
+            full design token system.
+        </p>
+
+        <div class="hero-image">
+            <img src="assets/images/case-studies/tellit/hero.svg" alt="Tellit startup directory hero visuals">
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="section-subtitle">Project Overview</div>
+        <h2 class="section-title">Building a Modern Startup Directory</h2>
+        <div class="text-block">
+            <p>
+                Tellit needed a clean, intuitive interface for browsing and discovering startups. 
+                The challenge was creating a directory that felt modern and engaging while 
+                maintaining information density and discoverability.
+            </p>
+            <p>
+                Working from Figma designs, I developed a complete design token system and 
+                built an interactive React prototype that demonstrates the full user experience—from 
+                browsing company cards to filtering by categories and searching for specific companies.
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>The Challenge</h3>
+                <p>
+                    Create a startup directory that balances visual appeal with information 
+                    density. Users need to quickly scan dozens of companies while still getting 
+                    enough detail to make informed decisions about which to explore further.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>The Approach</h3>
+                <p>
+                    Designed a card-based layout with consistent information hierarchy, smart 
+                    filtering, and responsive grid system. Built with a comprehensive design 
+                    token system ensuring consistency across all components.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design Approach</div>
+            <h2 class="section-title">From Figma to Interactive Prototype</h2>
+
+            <div class="text-block">
+                <p>
+                    The project began with comprehensive Figma designs that established the 
+                    visual direction and component structure. I extracted a complete design 
+                    token system and built an interactive prototype using React and Tailwind CSS.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Company Cards</h3>
+                    <p class="feature-description">
+                        Clean card design showing company logo, name, description, and key 
+                        metrics. Hover states and consistent spacing create a polished browsing 
+                        experience.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Smart Filtering</h3>
+                    <p class="feature-description">
+                        Multi-category filtering system that lets users narrow down companies 
+                        by industry, stage, location, and other criteria. Filters update 
+                        results in real-time.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Search Functionality</h3>
+                    <p class="feature-description">
+                        Instant search that filters companies as users type. Search works across 
+                        company names, descriptions, and tags for comprehensive discoverability.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Responsive Grid</h3>
+                    <p class="feature-description">
+                        Flexible grid layout that adapts from 3 columns on desktop to single 
+                        column on mobile. Cards maintain their proportions and readability 
+                        across all screen sizes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/cards-grid.svg" alt="Company card grid with filtering sidebar">
+                    </div>
+                    <p class="image-caption">Company card grid with filtering sidebar</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/search-filters.svg" alt="Search and filter interactions">
+                    </div>
+                    <p class="image-caption">Search and filter interactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Core Features</div>
+            <h2 class="section-title">Technical Implementation</h2>
+
+            <div class="text-block">
+                <p>
+                    <strong>Design token system:</strong> Extracted all colors, typography, 
+                    spacing, and shadows from Figma into a comprehensive token system. This 
+                    ensures pixel-perfect fidelity to the original designs while maintaining 
+                    flexibility for theme variations.
+                </p>
+                <p>
+                    <strong>Component architecture:</strong> Built modular React components 
+                    that mirror the Figma design structure. Each component is self-contained 
+                    with props for customization, making them reusable across the application.
+                </p>
+                <p>
+                    <strong>State management:</strong> Implemented local state for filtering, 
+                    search, and user interactions. The architecture is designed to scale to 
+                    more complex state management solutions as needed.
+                </p>
+                <p>
+                    <strong>Responsive design:</strong> Used Tailwind CSS utility classes 
+                    and custom breakpoints to create a fluid, responsive layout that works 
+                    beautifully from mobile to 4K displays.
+                </p>
+            </div>
+
+            <div class="image-grid single">
+                <div>
+                    <div class="case-image tall">
+                        <img src="assets/images/case-studies/tellit/full-directory.svg" alt="Full directory interface showing all components in context">
+                    </div>
+                    <p class="image-caption">Full directory interface showing all components in context</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Decisions -->
+    <section class="content-section">
+        <div class="section-subtitle">Design Philosophy</div>
+        <h2 class="section-title">Principles That Guided Development</h2>
+
+        <div class="text-block">
+            <p>
+                <strong>Consistency over cleverness:</strong> Every component follows the same 
+                design language established in Figma. Color usage, spacing, typography—all 
+                adhere to the token system without exception. This creates a cohesive experience 
+                that feels polished and professional.
+            </p>
+            <p>
+                <strong>Information hierarchy:</strong> Company cards present information in a 
+                clear order of importance—logo and name first, then description, then metadata. 
+                This hierarchy remains consistent across all cards, making scanning efficient.
+            </p>
+            <p>
+                <strong>Performance matters:</strong> The prototype handles hundreds of company 
+                cards without performance degradation. Filtering and search happen instantly, 
+                with no perceptible lag, creating a responsive feel.
+            </p>
+            <p>
+                <strong>From design to code:</strong> The development process emphasized maintaining 
+                100% fidelity to the Figma designs. Every pixel, every spacing value, every 
+                interaction matches the original design vision.
+            </p>
+        </div>
+
+        <div class="quote-block">
+            <p class="quote-text">
+                "The goal was pixel-perfect implementation—not just close, but identical to 
+                the Figma designs. Design tokens made this possible at scale."
+            </p>
+            <div class="quote-author">— Project Development Notes</div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Results</div>
+            <h2 class="section-title">Deliverables & Impact</h2>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Design fidelity to Figma</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">45+</div>
+                    <div class="stat-label">Reusable React components</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Design tokens documented</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2 weeks</div>
+                    <div class="stat-label">From design to prototype</div>
+                </div>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    The interactive prototype successfully demonstrated the full user experience, 
+                    allowing stakeholders to interact with the interface before development began. 
+                    This caught several UX issues early and validated the design direction.
+                </p>
+                <p>
+                    The comprehensive design token system and component library created during 
+                    prototyping became the foundation for production development, significantly 
+                    reducing the time needed to build the actual application.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <h2>Next Project</h2>
+        <p>Explore another case study from my portfolio</p>
+        <a href="case-study-able.html" class="next-btn">Walkthrough Experience for Able →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#work">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+    </script>
+</body>
+</html>

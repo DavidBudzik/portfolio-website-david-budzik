@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <rect width="1000" height="700" rx="28" fill="#E8E4DE"/>
+  <rect x="50" y="50" width="900" height="600" rx="18" fill="none" stroke="#9CAF88" stroke-width="4" stroke-dasharray="18 18"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#2A2A2A" font-family="Inter, Arial, sans-serif" font-size="32">Replace with Layer 1 step 1 visual</text>
+  <text x="50%" y="57%" text-anchor="middle" fill="#6B8E65" font-family="Inter, Arial, sans-serif" font-size="20">assets/images/case-studies/able/step-1.svg</text>
+</svg>
+

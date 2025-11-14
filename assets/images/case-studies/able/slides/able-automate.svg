@@ -1,0 +1,28 @@
+<svg width="908" height="696" viewBox="0 0 908 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="908" height="696" rx="12" fill="#161616"/>
+  <rect x="56" y="104" width="796" height="392" rx="16" fill="#1F1F1F" stroke="#2A2A2A" stroke-width="2"/>
+  <rect x="56" y="104" width="382" height="392" rx="16" fill="#202020"/>
+  <rect x="454" y="104" width="398" height="392" rx="16" fill="#1C1C1C"/>
+  <text x="80" y="84" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="32" font-weight="500">Welcome to Able</text>
+  <text x="80" y="118" fill="#8C8C8C" font-family="Inter, sans-serif" font-size="16">Section subtitle</text>
+  <text x="832" y="80" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="24">✕</text>
+  <rect x="96" y="188" width="304" height="96" rx="12" fill="#1F1F1F" stroke="#2A2A2A"/>
+  <text x="248" y="238" text-anchor="middle" fill="#F24E1E" font-family="Inter, sans-serif" font-size="64" font-weight="700">10X</text>
+  <text x="248" y="270" text-anchor="middle" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="18">Faster processing</text>
+  <rect x="96" y="308" width="304" height="96" rx="12" fill="#1F1F1F" stroke="#2A2A2A"/>
+  <text x="248" y="358" text-anchor="middle" fill="#F24E1E" font-family="Inter, sans-serif" font-size="44" font-weight="700">24/7</text>
+  <text x="248" y="390" text-anchor="middle" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="18">Automation</text>
+  <text x="482" y="170" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="28" font-weight="600">Automate Your Tasks</text>
+  <text x="482" y="210" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16" xml:space="preserve">Set up triggers and schedules to run workflows automatically. Connect to your favorite apps and services to create powerful automations.</text>
+  <rect x="502" y="320" width="320" height="160" rx="12" fill="#1F1F1F" stroke="#2A2A2A"/>
+  <text x="530" y="356" fill="#F24E1E" font-family="Inter, sans-serif" font-size="14" font-weight="600" letter-spacing="0.08em">GETTING STARTED</text>
+  <text x="530" y="388" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16" xml:space="preserve">Use pre-built integrations or create custom connections with webhooks and APIs.</text>
+  <rect x="530" y="408" width="112" height="40" rx="8" fill="none" stroke="#2A2A2A"/>
+  <text x="586" y="434" text-anchor="middle" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="16">Read more</text>
+  <rect x="56" y="576" width="120" height="48" rx="8" fill="#1F1F1F" stroke="#2A2A2A"/>
+  <text x="116" y="606" text-anchor="middle" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="16">Skip tutorial</text>
+  <text x="744" y="606" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16">Back</text>
+  <rect x="792" y="576" width="96" height="48" rx="8" fill="#F24E1E"/>
+  <text x="840" y="606" text-anchor="middle" fill="#0A0A0A" font-family="Inter, sans-serif" font-size="16" font-weight="600">Next</text>
+</svg>
+

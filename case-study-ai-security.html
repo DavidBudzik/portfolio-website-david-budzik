@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Security Platform - David Budzik</title>
+    <link rel="stylesheet" href="css/case-study-ai-security.css">
+</head>
+<body id="top">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <div class="logo">David Budzik</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="project-meta">
+            <div class="meta-item">
+                <div class="meta-label">Client</div>
+                <div class="meta-value">Polar Hedgehog</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Role</div>
+                <div class="meta-value">Lead Product Designer</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Timeline</div>
+                <div class="meta-value">6 months (2024)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Disciplines</div>
+                <div class="meta-value">Product Design, UX Strategy, Design Systems</div>
+            </div>
+        </div>
+
+        <h1 class="case-title">AI Agent Security Platform</h1>
+        <p class="case-intro">
+            Designing the first comprehensive B2B platform for monitoring and securing 
+            AI agents and Model Context Protocol (MCP) connections in enterprise environments.
+        </p>
+
+        <div class="hero-image">
+            <img src="assets/images/case-studies/ai-security/hero.png" alt="AI agent security platform overview dashboard">
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="section-subtitle">Project Overview</div>
+        <h2 class="section-title">Fast MVPs Without Sacrificing Design Quality</h2>
+        <div class="text-block">
+            <p>
+                I work on a cybersecurity platform that protects and monitors AI agents and 
+                MCP (Model Context Protocol) connections in organizations. In security, you 
+                need fast feedback loops—getting features in front of security teams quickly 
+                to learn what actually matters before committing full engineering resources.
+            </p>
+            <p>
+                But as a product designer, I also needed to maintain visual consistency and 
+                design system integrity. The challenge: deliver testable MVPs in one week 
+                instead of three, while meeting the design quality standards that make user 
+                feedback meaningful.
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>The Challenge</h3>
+                <p>
+                    Browser-based AI tools generated inconsistent code—random colors instead 
+                    of design tokens, spacing that violated our grid, components that ignored 
+                    our patterns. The "time savings" evaporated when I had to rewrite everything 
+                    to meet design standards.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>The Breakthrough</h3>
+                <p>
+                    Stopped using natural language and started using structured JSON specifications 
+                    with exact design token references. Built a workflow connecting Claude, Figma 
+                    Make, and Cursor through MCP to maintain consistency at every step.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design Process</div>
+            <h2 class="section-title">The AI-Native Workflow</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-phase">Foundation</div>
+                    <h3 class="timeline-title">Design Token Infrastructure</h3>
+                    <p class="timeline-description">
+                        Mapped every Figma variable to its CSS token with exact syntax. 
+                        Example: Figma <code>color/grey/200</code> → CSS 
+                        <code>--igds-color-grey-200: #e8e9e9</code>. This became the 
+                        foundation everything depends on—no arbitrary values, only token references.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-phase">Step 01</div>
+                    <h3 class="timeline-title">Structured JSON Specifications</h3>
+                    <p class="timeline-description">
+                        Built a Claude skill that generates comprehensive JSON prompts from 
+                        wireframes. Instead of natural language descriptions, I created structured 
+                        specifications with component types, exact design token references, measurements, 
+                        state variations, and accessibility requirements. JSON forces precision—AI 
+                        stops guessing and starts executing exactly.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-phase">Step 02</div>
+                    <h3 class="timeline-title">Figma Make for Mockups</h3>
+                    <p class="timeline-description">
+                        Using the JSON specifications, Figma Make generates design-system-connected 
+                        mockups that properly reference design tokens. Every color, spacing value, 
+                        and typography choice comes from the token system—ensuring pixel-perfect 
+                        fidelity to design standards before any code is written.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-phase">Step 03</div>
+                    <h3 class="timeline-title">Cursor with MCP Integration</h3>
+                    <p class="timeline-description">
+                        Through Figma MCP, Cursor accesses design context directly, pulls Code 
+                        Connect mappings, and composes components into our codebase with version 
+                        management. The tools aren't working in isolation—they're connected to 
+                        our design system and codebase through MCP. Context is everything.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-phase">Validation</div>
+                    <h3 class="timeline-title">Client Feedback Loop</h3>
+                    <p class="timeline-description">
+                        Deploy MVPs to select clients within one week. First feedback round reveals 
+                        what monitoring features security teams actually need. Iterate using the same 
+                        workflow—JSON updates flow through to code. Second round confirms we're 
+                        solving real problems before committing full engineering resources.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Key Features</div>
+            <h2 class="section-title">What We Built</h2>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Agent Inventory Dashboard</h3>
+                    <p class="feature-description">
+                        Real-time monitoring of all AI agents in the organization. Security teams 
+                        can see agent status, permissions, recent actions, and risk levels at a 
+                        glance. Every element uses design tokens—consistent spacing, proper typography 
+                        scale, and systematic color usage.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">MCP Connection Tracking</h3>
+                    <p class="feature-description">
+                        Visual representation of Model Context Protocol connections showing what 
+                        data agents can access and which external services they interact with. 
+                        Makes invisible relationships visible while maintaining design system integrity.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Agent Detail Sidebar</h3>
+                    <p class="feature-description">
+                        Deep-dive interface showing agent identity, permissions, connection history, 
+                        and behavior patterns. Designed for quick investigation without losing context. 
+                        Built using the same JSON specifications that ensured consistency throughout.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Security Alerts System</h3>
+                    <p class="feature-description">
+                        Intelligent alerting for suspicious agent behavior, unauthorized access 
+                        attempts, and policy violations. Alert hierarchy uses systematic color 
+                        tokens to communicate severity without overwhelming users.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/ai-security/agent-inventory.svg" alt="Agent inventory dashboard showing real-time monitoring">
+                    </div>
+                    <p class="image-caption">Agent inventory dashboard showing real-time monitoring</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/ai-security/agent-detail.svg" alt="Agent detail sidebar with permissions and activity tracking">
+                    </div>
+                    <p class="image-caption">Agent detail sidebar with permissions and activity tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Decisions -->
+    <section class="content-section">
+        <div class="section-subtitle">Design Decisions</div>
+        <h2 class="section-title">What Actually Mattered</h2>
+
+        <div class="text-block">
+            <p>
+                <strong>Structure beats speed:</strong> Browser tools were faster to start 
+                but produced unusable output—random values, inconsistent spacing, ignored 
+                design systems. The structured workflow took more setup but delivered testable 
+                MVPs that enabled meaningful user feedback.
+            </p>
+            <p>
+                <strong>Design quality as acceptance criteria:</strong> As a product designer, 
+                I couldn't compromise on visual consistency or design system integrity. MVPs 
+                need proper token usage, grid alignment, typography scale, and accessibility 
+                to represent your product accurately. Speed without design quality wastes 
+                user testing time.
+            </p>
+            <p>
+                <strong>JSON specifications enable consistency:</strong> Natural language 
+                produces guesses. JSON with design token references produces predictable 
+                implementations that meet design standards. When you give AI structured data 
+                instead of prose, it stops guessing and starts executing precisely.
+            </p>
+            <p>
+                <strong>Integration over isolation:</strong> AI tools connected to our design 
+                system through MCP dramatically outperformed isolated code generators. Tools 
+                working in isolation can't maintain consistency. Tools connected to your design 
+                system and codebase can.
+            </p>
+            <p>
+                <strong>Multiple specialized tools, orchestrated workflow:</strong> Claude Skills 
+                for data structure, Figma Make for visuals, Cursor with MCP for integration. 
+                Each tool specialized for its purpose, the workflow orchestrating them into 
+                a coherent system that maintains design quality at every step.
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image tall">
+                    <img src="assets/images/case-studies/ai-security/monitoring-interface.svg" alt="Full monitoring interface showing design system consistency across all components">
+                </div>
+                <p class="image-caption">Full monitoring interface showing design system consistency across all components</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Impact & Results</div>
+            <h2 class="section-title">Fast MVPs, Real Validation</h2>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1 week</div>
+                    <div class="stat-label">From concept to testable MVP</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Design system compliance</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2 rounds</div>
+                    <div class="stat-label">Client feedback before production</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3x</div>
+                    <div class="stat-label">Faster than traditional MVP cycle</div>
+                </div>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    The platform reached MVP in one week not because the code was perfect from 
+                    the start—it reached MVP because we could iterate fast enough to get something 
+                    testable in front of security teams before committing full engineering resources, 
+                    and it met design quality standards that made the feedback meaningful.
+                </p>
+                <p>
+                    Client feedback revealed which AI agent monitoring features actually mattered. 
+                    We validated core assumptions before investing in full production development. 
+                    We learned what security teams needed for monitoring AI agents, discovered what 
+                    to build before fully building it, and proved you don't have to sacrifice design 
+                    quality for speed.
+                </p>
+                <p>
+                    The value isn't perfect AI-generated code. It's getting MVPs in front of users 
+                    fast enough to learn what actually matters—while maintaining the design quality 
+                    and system consistency that accurately represents your product.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <h2>Next Project</h2>
+        <p>Explore another case study from my portfolio</p>
+        <a href="case-study-tellit.html" class="next-btn">Tellit →</a>
+    </section>
+
+    <a href="#top" class="scroll-top" aria-label="Scroll to top"><span>Scroll to top</span></a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#work">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        if (scrollTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollTopBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

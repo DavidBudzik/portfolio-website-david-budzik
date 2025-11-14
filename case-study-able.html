@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkthrough Experience for Able - David Budzik</title>
+    <link rel="stylesheet" href="css/case-study-able.css">
+</head>
+<body id="top">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <div class="logo">David Budzik</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="project-meta">
+            <div class="meta-item">
+                <div class="meta-label">Client</div>
+                <div class="meta-value">Able Insights</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Role</div>
+                <div class="meta-value">UX Designer & React Developer</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Timeline</div>
+                <div class="meta-value">3 weeks (2025)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Disciplines</div>
+                <div class="meta-value">Onboarding Design, Interaction Design, Prototyping</div>
+            </div>
+        </div>
+
+        <h1 class="case-title">Walkthrough Experience for Able</h1>
+        <p class="case-intro">
+            Designing an interactive onboarding experience for a research and decision intelligence 
+            platform, helping users discover value through personalized use-case flows and guided 
+            first project creation.
+        </p>
+
+        <div class="hero-image">
+            <img src="assets/images/case-studies/able/hero.svg" alt="Able onboarding walkthrough hero visuals">
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="section-subtitle">Project Context</div>
+        <h2 class="section-title">The Onboarding Challenge</h2>
+        <div class="text-block">
+            <p>
+                Able Insights is a research and decision intelligence platform that connects 
+                private data, proprietary datasets, and public sources to help corporate development 
+                teams, market researchers, and investment analysts make informed decisions. The 
+                platform offers access to 50+ data sources, AI-powered insights, and collaborative 
+                research workflows.
+            </p>
+            <p>
+                The challenge was creating an onboarding experience that could serve three distinct 
+                user personas—corporate development professionals, market researchers, and investment 
+                analysts—each with different needs, workflows, and levels of technical expertise. 
+                Users needed to quickly understand the platform's value and start their first 
+                research project without getting lost in features.
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>The Problem</h3>
+                <p>
+                    New users faced analysis paralysis when presented with 50+ data sources and 
+                    multiple use cases. They needed guidance on where to start based on their 
+                    specific role and goals, not a generic product tour.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>The Goal</h3>
+                <p>
+                    Create a personalized walkthrough that adapts to the user's role and use 
+                    case, guiding them to create their first research project while introducing 
+                    only the features relevant to their workflow.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Principles -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design Principles</div>
+            <h2 class="section-title">Guiding Philosophy</h2>
+
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3 class="principle-title">Show, don't just tell</h3>
+                    <p class="principle-description">
+                        Instead of explaining features abstractly, the walkthrough demonstrates 
+                        them with real examples. Users see the product in action rather than 
+                        reading descriptions of what it can do.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Progressive disclosure</h3>
+                    <p class="principle-description">
+                        Information is revealed as users need it, not all at once. Basic concepts 
+                        come first, advanced features later. Users can skip ahead if they're 
+                        already familiar with concepts.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Respect user agency</h3>
+                    <p class="principle-description">
+                        The walkthrough is helpful, never prescriptive. Users can exit anytime, 
+                        skip steps, or revisit sections. They're in control of their learning 
+                        journey, not trapped in a rigid tutorial.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Quick wins matter</h3>
+                    <p class="principle-description">
+                        Within the first 90 seconds, users accomplish something meaningful. 
+                        This early success builds confidence and momentum for exploring more 
+                        complex features later.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">The Solution</div>
+            <h2 class="section-title">A Multi-Layer Approach</h2>
+
+            <div class="text-block">
+                <p>
+                    Rather than a single linear walkthrough, I designed a layered education 
+                    system that adapts to different user needs and learning styles. The experience 
+                    has three modes that work together seamlessly.
+                </p>
+            </div>
+
+            <div class="callout-box">
+                <h3>Layer 1: Essential Walkthrough</h3>
+                <p>
+                    A focused 2-minute introduction that covers only the core workflow. Users 
+                    complete one meaningful task and understand the product's basic mental model. 
+                    This is the default experience for new users.
+                </p>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able/slides/able-ready.svg" alt="Ready to get started screen introducing Able resources" loading="lazy">
+                    </div>
+                    <p class="image-caption">Screen 1: A confident wrap-up with quick access to core resources.</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able/slides/able-create-workflow.svg" alt="Prompt to create a new workflow in Able" loading="lazy">
+                    </div>
+                    <p class="image-caption">Screen 2: CTA-led momentum into the first workflow build.</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able/slides/able-automate.svg" alt="Automation overview screen with measurable outcomes" loading="lazy">
+                    </div>
+                    <p class="image-caption">Screen 3: Automation benefits framed with measurable outcomes.</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able/slides/able-organize.svg" alt="Organize workflows into folders screen" loading="lazy">
+                    </div>
+                    <p class="image-caption">Screen 4: Personalised folders that reinforce long-term organisation.</p>
+                </div>
+            </div>
+
+            <div class="callout-box margin-top-xl">
+                <h3>Layer 2: Contextual Tooltips</h3>
+                <p>
+                    As users explore, subtle tooltips appear when they encounter new features 
+                    for the first time. These are minimal, dismissible, and only show when 
+                    contextually relevant. They don't interrupt workflow.
+                </p>
+            </div>
+
+            <div class="callout-box">
+                <h3>Layer 3: Resource Center</h3>
+                <p>
+                    A persistent help menu where users can watch specific feature tutorials, 
+                    read best practices, or revisit the initial walkthrough. This serves users 
+                    who prefer to explore first and learn later.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen System -->
+    <section class="content-section white" id="screen-system">
+        <div class="section-wrapper">
+            <div class="section-subtitle">High-Fidelity Screens</div>
+            <h2 class="section-title">Guided onboarding storyboard</h2>
+            <div class="text-block">
+                <p>
+                    Each frame inherits the Able design system tokens—neutral surfaces, accent orange calls-to-action,
+                    and 8pt spacing—to keep education moments visually consistent with the live product. The storyboard
+                    balances reassurance, instruction, and forward momentum so new users never lose context.
+                </p>
+            </div>
+
+            <div class="screen-grid">
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-ready.svg" alt="Ready to get started screen summarising resources" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Ready to get started</h3>
+                    <p class="screen-description">
+                        Celebrates completion and anchors next steps with a curated resource stack that matches the user’s role.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Quick links point to the knowledge centre, ensuring continuity between walkthrough and docs.</li>
+                        <li>The primary CTA reuses the accent token and 2px focus ring defined in the Able system.</li>
+                    </ul>
+                </article>
+
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-automate.svg" alt="Automate your tasks slide with performance metrics" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Automate your tasks</h3>
+                    <p class="screen-description">
+                        Quantifies the impact of automation while the progress tracker keeps users oriented in the flow.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Metric callouts emphasise the value proposition (“10x faster”, “24/7 automation”) in product language.</li>
+                        <li>A secondary card nudges users toward webhook integrations without derailing the core narrative.</li>
+                    </ul>
+                </article>
+
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-create-workflow.svg" alt="Create your first workflow screen with call-to-action" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Create your first workflow</h3>
+                    <p class="screen-description">
+                        Moves quickly from inspiration to action, guiding teams to press “New Workflow” with confidence.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Microcopy details where to click next and why it matters for library organisation.</li>
+                        <li>The pro-tip card captures best practices for naming conventions right as they matter.</li>
+                    </ul>
+                </article>
+
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-knowledge.svg" alt="Knowledge article modal with close control" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Deep-dive knowledge</h3>
+                    <p class="screen-description">
+                        A lightweight modal serves long-form education without ejecting users from the onboarding canvas.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Sticky close control and progress dots respect user agency and reduce modal fatigue.</li>
+                        <li>Typography follows the body/14 style so lengthy content stays readable on desktop and tablet.</li>
+                    </ul>
+                </article>
+
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-organize.svg" alt="Organize with folders slide showing three folder cards" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Organise with folders</h3>
+                    <p class="screen-description">
+                        Demonstrates how to tidy the workspace, reinforcing mental models for ongoing governance.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Folder cards pair iconography with semantic copy to translate system taxonomy for new teams.</li>
+                        <li>The best-practice panel links to workflow templates, closing the loop with Layer 3 resources.</li>
+                    </ul>
+                </article>
+
+                <article class="screen-card">
+                    <div class="screen-media">
+                        <img src="assets/images/case-studies/able/slides/able-video-cover.svg" alt="Video tutorial cover screen with Able branding" loading="lazy">
+                    </div>
+                    <h3 class="screen-title">Video onboarding hub</h3>
+                    <p class="screen-description">
+                        A branded video module offers a low-friction handoff to multimedia learning for visual learners.
+                    </p>
+                    <ul class="screen-list">
+                        <li>Adaptive layout ensures the play button remains centred on any breakpoint without cropping.</li>
+                        <li>Secondary CTA keeps text-based documentation within reach for accessibility compliance.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interaction Design -->
+    <section class="content-section">
+        <div class="section-subtitle">Interaction Design</div>
+        <h2 class="section-title">Making Education Feel Natural</h2>
+
+        <div class="text-block">
+            <p>
+                <strong>Spotlight highlighting:</strong> Rather than covering the interface 
+                with overlays, the walkthrough uses subtle dimming to highlight relevant areas. 
+                Users can still see the full interface, maintaining context while focusing 
+                attention.
+            </p>
+            <p>
+                <strong>Interactive demonstrations:</strong> Users don't just watch—they perform 
+                actions themselves with guidance. This hands-on approach creates muscle memory 
+                and builds confidence faster than passive observation.
+            </p>
+            <p>
+                <strong>Smart pacing:</strong> The system detects when users are struggling and 
+                offers additional help. If users are moving confidently, it steps back. Pacing 
+                adapts to individual needs rather than following a fixed timeline.
+            </p>
+            <p>
+                <strong>Graceful exits:</strong> At any point, users can exit the walkthrough 
+                and return to normal use. A small indicator shows how far they've progressed, 
+                and they can resume later if desired. There's no penalty for skipping.
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image tall">
+                    <img src="assets/images/case-studies/able/full-interface.svg" alt="Full interface during walkthrough showing spotlight effect">
+                </div>
+                <p class="image-caption">Full interface during walkthrough showing spotlight effect</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Impact</div>
+            <h2 class="section-title">Measurable Improvements</h2>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">73%</div>
+                    <div class="stat-label">Walkthrough completion rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.8x</div>
+                    <div class="stat-label">Increase in day-7 retention</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">56%</div>
+                    <div class="stat-label">Fewer support tickets from new users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.2/5</div>
+                    <div class="stat-label">User satisfaction with onboarding</div>
+                </div>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    The new walkthrough significantly improved user activation and retention. 
+                    More importantly, qualitative feedback showed that users felt more confident 
+                    exploring the product on their own after completing the onboarding.
+                </p>
+                <p>
+                    The layered approach proved particularly successful. Power users appreciated 
+                    being able to skip the basic walkthrough, while novice users benefited from 
+                    the structured guidance. By respecting different learning styles and experience 
+                    levels, the design served a broader range of users effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning -->
+    <section class="content-section">
+        <div class="section-subtitle">Key Learnings</div>
+        <h2 class="section-title">What This Project Taught Me</h2>
+
+        <div class="text-block">
+            <p>
+                <strong>Onboarding is not a single moment:</strong> The best user education 
+                happens across multiple touchpoints. A single comprehensive tutorial overwhelms; 
+                small, contextual lessons throughout the experience work better.
+            </p>
+            <p>
+                <strong>Completion rate isn't everything:</strong> We optimized for user 
+                confidence and long-term activation, not just walkthrough completion. Some users 
+                who skip the tutorial entirely become highly engaged—and that's okay.
+            </p>
+            <p>
+                <strong>Test with real tasks, not toy examples:</strong> Early prototypes used 
+                generic demo content. When we switched to realistic use cases, engagement 
+                improved dramatically. Users need to see themselves in the examples.
+            </p>
+            <p>
+                <strong>Respect attention as a finite resource:</strong> Every second in an 
+                onboarding flow has a cost. We ruthlessly prioritized what users truly needed 
+                to know immediately versus what could wait until they needed it.
+            </p>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <h2>View More Work</h2>
+        <p>Return to portfolio or explore another case study</p>
+        <a href="index.html#work" class="next-btn">Back to All Projects</a>
+    </section>
+
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">
+        <span>Scroll to top</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#work">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+        
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button, .screen-card, .insight-box');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        if (scrollTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 320) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollTopBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

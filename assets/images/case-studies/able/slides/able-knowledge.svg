@@ -1,0 +1,27 @@
+<svg width="908" height="696" viewBox="0 0 908 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="908" height="696" rx="12" fill="#161616"/>
+  <rect x="56" y="104" width="796" height="392" rx="16" fill="#1F1F1F" stroke="#2A2A2A" stroke-width="2"/>
+  <text x="80" y="84" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="32" font-weight="500">Welcome to Able</text>
+  <text x="80" y="118" fill="#8C8C8C" font-family="Inter, sans-serif" font-size="16">Section subtitle</text>
+  <text x="832" y="80" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="24">✕</text>
+  <rect x="96" y="156" width="320" height="16" rx="8" fill="#8C8C8C"/>
+  <rect x="430" y="156" width="48" height="16" rx="8" fill="#F24E1E"/>
+  <rect x="96" y="196" width="676" height="264" rx="12" fill="#202020" stroke="#2A2A2A"/>
+  <text x="120" y="242" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="28" font-weight="600">Lorem ipsum</text>
+  <text x="120" y="284" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16" xml:space="preserve">Adidas is a globally recognized sportswear and athletic brand headquartered in Herzogenaurach, Germany. Founded in 1949 
+by Adolf Dassler, the company has grown into one of the world’s leading manufacturers of sports shoes, apparel, and accessories. 
+Known for its iconic three-stripe logo, Adidas has built a strong reputation through innovation, quality, and strategic sponsorships 
+with athletes, sports teams, and cultural influencers. Its product range spans footwear, performance gear, and lifestyle collections.</text>
+  <text x="120" y="404" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16" xml:space="preserve">Adidas is a globally recognized sportswear and athletic brand headquartered in Herzogenaurach, Germany. Founded in 1949 
+by Adolf Dassler, the company has grown into one of the world’s leading manufacturers of sports shoes, apparel, and accessories. 
+Known for its iconic three-stripe logo, Adidas has built a strong reputation through innovation, quality, and strategic sponsorships 
+with athletes, sports teams, and cultural influencers.</text>
+  <rect x="676" y="224" width="96" height="48" rx="8" fill="none" stroke="#2A2A2A"/>
+  <text x="724" y="254" text-anchor="middle" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="16">Close</text>
+  <rect x="56" y="576" width="120" height="48" rx="8" fill="#1F1F1F" stroke="#2A2A2A"/>
+  <text x="116" y="606" text-anchor="middle" fill="#E0E0E0" font-family="Inter, sans-serif" font-size="16">Skip tutorial</text>
+  <text x="744" y="606" fill="#B8B8B8" font-family="Inter, sans-serif" font-size="16">Back</text>
+  <rect x="792" y="576" width="96" height="48" rx="8" fill="#F24E1E"/>
+  <text x="840" y="606" text-anchor="middle" fill="#0A0A0A" font-family="Inter, sans-serif" font-size="16" font-weight="600">Next</text>
+</svg>
+
