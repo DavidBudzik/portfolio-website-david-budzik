@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tellit - David Budzik</title>
+    <title>Tellit: Rebuilding Trust Between Startups and Investors - David Budzik</title>
     <link rel="stylesheet" href="css/case-study-tellit.css">
 </head>
 <body>
@@ -22,122 +22,447 @@
         <div class="project-meta">
             <div class="meta-item">
                 <div class="meta-label">Project Type</div>
-                <div class="meta-value">UI Concept & Interactive Prototype</div>
+                <div class="meta-value">B2B SaaS Platform</div>
             </div>
             <div class="meta-item">
                 <div class="meta-label">Role</div>
-                <div class="meta-value">Product Designer & Front-end Developer</div>
+                <div class="meta-value">Lead Product Designer</div>
             </div>
             <div class="meta-item">
                 <div class="meta-label">Timeline</div>
-                <div class="meta-value">2 weeks (2025)</div>
+                <div class="meta-value">6 months (2024)</div>
             </div>
             <div class="meta-item">
                 <div class="meta-label">Disciplines</div>
-                <div class="meta-value">UI Design, Design Systems, React Development</div>
+                <div class="meta-value">UX Research, UI Design, Design Systems, Analytics</div>
             </div>
         </div>
 
-        <h1 class="case-title">Tellit</h1>
+        <h1 class="case-title">Tellit: Rebuilding Trust Between Startups and Investors</h1>
         <p class="case-intro">
-            A modern startup directory platform with sophisticated filtering, search, and company 
-            card layouts. Designed in Figma and built as an interactive React prototype with 
-            full design token system.
+            An investor relations platform that transforms fundraising from scattered chaos
+            into organized clarity. By replacing email black holes with beautiful, trackable
+            investor pages, Tellit gives founders the visibility and confidence they need to
+            close funding rounds.
         </p>
 
         <div class="hero-image">
-            <img src="assets/images/case-studies/tellit/hero.svg" alt="Tellit startup directory hero visuals">
+            <img src="assets/images/case-studies/tellit/hero.svg" alt="Tellit investor page platform interface">
         </div>
     </section>
 
-    <!-- Overview -->
+    <!-- Problem Hook -->
     <section class="content-section">
-        <div class="section-subtitle">Project Overview</div>
-        <h2 class="section-title">Building a Modern Startup Directory</h2>
+        <div class="section-subtitle">The Problem</div>
+        <h2 class="section-title">Fundraising in the Dark</h2>
+
+        <div class="quote-block">
+            <p class="quote-text">
+                "I sent our deck to 40 VCs. Got 3 responses. No idea if the other 37 even opened it."
+            </p>
+            <div class="quote-author">— Early-stage founder during user research</div>
+        </div>
+
         <div class="text-block">
             <p>
-                Tellit needed a clean, intuitive interface for browsing and discovering startups. 
-                The challenge was creating a directory that felt modern and engaging while 
-                maintaining information density and discoverability.
+                Every founder I interviewed described the same nightmare. You spend weeks perfecting
+                your pitch deck, craft the perfect cold email, hit send to 50 VCs, and then... nothing.
+                This opacity isn't just frustrating—it's strategically dangerous.
             </p>
             <p>
-                Working from Figma designs, I developed a complete design token system and 
-                built an interactive React prototype that demonstrates the full user experience—from 
-                browsing company cards to filtering by categories and searching for specific companies.
+                Founders make critical decisions based on guesswork: Should I follow up? Did they
+                even see it? Is there interest or am I wasting my time? I started this project by
+                asking: <strong>What if founders could see exactly what investors do with their materials?</strong>
             </p>
-        </div>
-
-        <div class="two-column">
-            <div class="insight-box">
-                <h3>The Challenge</h3>
-                <p>
-                    Create a startup directory that balances visual appeal with information 
-                    density. Users need to quickly scan dozens of companies while still getting 
-                    enough detail to make informed decisions about which to explore further.
-                </p>
-            </div>
-            <div class="insight-box highlight">
-                <h3>The Approach</h3>
-                <p>
-                    Designed a card-based layout with consistent information hierarchy, smart 
-                    filtering, and responsive grid system. Built with a comprehensive design 
-                    token system ensuring consistency across all components.
-                </p>
-            </div>
         </div>
     </section>
 
-    <!-- Design Process -->
-    <section class="content-section white">
+    <!-- Problem Deep-Dive -->
+    <section class="content-section gray">
         <div class="section-wrapper">
-            <div class="section-subtitle">Design Approach</div>
-            <h2 class="section-title">From Figma to Interactive Prototype</h2>
+            <div class="section-subtitle">Research Insights</div>
+            <h2 class="section-title">Five Core Pain Points</h2>
 
             <div class="text-block">
                 <p>
-                    The project began with comprehensive Figma designs that established the 
-                    visual direction and component structure. I extracted a complete design 
-                    token system and built an interactive prototype using React and Tailwind CSS.
+                    Through interviews with 12 early-stage founders, five critical problems emerged.
+                    What's at stake? Founders are losing funding opportunities because they can't
+                    identify warm leads. They're wasting precious runway on investors who'll never
+                    engage. And they're walking into pitch meetings unprepared, without knowing what
+                    concerns they need to address.
+                </p>
+                <p>
+                    This wasn't just an information problem—it was a <strong>trust problem</strong>.
                 </p>
             </div>
 
             <div class="feature-grid">
                 <div class="feature-item">
                     <div class="feature-number">01</div>
-                    <h3 class="feature-title">Company Cards</h3>
+                    <h3 class="feature-title">Complete Opacity</h3>
                     <p class="feature-description">
-                        Clean card design showing company logo, name, description, and key 
-                        metrics. Hover states and consistent spacing create a polished browsing 
-                        experience.
+                        Zero visibility into investor engagement. Founders have no idea if their
+                        materials were viewed, shared, or immediately deleted.
                     </p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-number">02</div>
-                    <h3 class="feature-title">Smart Filtering</h3>
+                    <h3 class="feature-title">Scattered Materials</h3>
                     <p class="feature-description">
-                        Multi-category filtering system that lets users narrow down companies 
-                        by industry, stage, location, and other criteria. Filters update 
-                        results in real-time.
+                        Pitch decks, one-pagers, financials, and team bios scattered across
+                        email threads, Dropbox links, and Google Drives.
                     </p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-number">03</div>
-                    <h3 class="feature-title">Search Functionality</h3>
+                    <h3 class="feature-title">No Access Control</h3>
                     <p class="feature-description">
-                        Instant search that filters companies as users type. Search works across 
-                        company names, descriptions, and tags for comprehensive discoverability.
+                        Once you email a PDF, you lose all control. No way to update materials
+                        or revoke access from investors who passed.
                     </p>
                 </div>
 
                 <div class="feature-item">
                     <div class="feature-number">04</div>
-                    <h3 class="feature-title">Responsive Grid</h3>
+                    <h3 class="feature-title">Missing Context</h3>
                     <p class="feature-description">
-                        Flexible grid layout that adapts from 3 columns on desktop to single 
-                        column on mobile. Cards maintain their proportions and readability 
-                        across all screen sizes.
+                        No insight into which questions matter most to investors or what
+                        concerns are preventing them from moving forward.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h3 class="feature-title">Impossible Follow-ups</h3>
+                    <p class="feature-description">
+                        Without engagement data, founders can't follow up intelligently.
+                        Every outreach feels like a shot in the dark.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="content-section">
+        <div class="section-subtitle">The Solution</div>
+        <h2 class="section-title">One Link. Full Visibility. Living Pages.</h2>
+
+        <div class="text-block">
+            <p>
+                Instead of emailing PDFs into a void, founders create beautiful investor pages
+                that consolidate everything an investor needs in one shareable link. The key
+                insight: <strong>Founders don't need another document management tool</strong>. They need
+                a platform that treats investor relations as an ongoing relationship, not a
+                one-time email blast.
+            </p>
+            <p>
+                Every design decision stemmed from three core principles:
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>One Link for All Context</h3>
+                <p>
+                    Instead of juggling multiple files and links, founders share a single
+                    URL that contains pitch deck, team info, Q&A, and supporting materials.
+                    Investors get everything they need without hunting through email threads.
+                </p>
+            </div>
+            <div class="insight-box">
+                <h3>Full Visibility into Engagement</h3>
+                <p>
+                    Track every page view, file download, and question opened. Know exactly
+                    which investors are interested and what concerns matter most to them.
+                </p>
+            </div>
+        </div>
+
+        <div class="callout-box">
+            <h3>Living Pages That Evolve</h3>
+            <p>
+                Update materials in real-time without resending links. Fix typos, add new
+                metrics, answer emerging questions—all without breaking existing investor access.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Features: Hero Section -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Feature Breakdown</div>
+            <h2 class="section-title">Hero Section Design</h2>
+
+            <div class="text-block">
+                <p>
+                    The hero section had to immediately convey professionalism while maintaining
+                    approachability. I designed eight customizable themes that let founders express
+                    different brand personalities—from minimal and sophisticated to bold and energetic.
+                </p>
+                <p>
+                    The customization panel gives instant visual feedback as founders adjust colors
+                    and themes. But notice the constraints: I'm not giving unlimited customization,
+                    because too much freedom creates ugly pages. Instead, I designed eight pre-balanced
+                    themes and let founders choose colors within guardrails that ensure sufficient contrast.
+                </p>
+                <p>
+                    This approach gives founders ownership over their visual identity while preventing
+                    truly bad design decisions.
+                </p>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/hero-section.svg" alt="Hero section with customizable themes">
+                    </div>
+                    <p class="image-caption">Hero section with eight pre-designed theme options</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/theme-customization.svg" alt="Theme customization panel">
+                    </div>
+                    <p class="image-caption">Real-time theme customization with color constraints</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team & Value Proposition -->
+    <section class="content-section">
+        <div class="section-subtitle">Building Trust</div>
+        <h2 class="section-title">Team & Value Proposition Sections</h2>
+
+        <div class="text-block">
+            <p>
+                <strong>Investors invest in people, not just ideas.</strong> I designed the team
+                section as a clean grid of headshots with minimal decoration—no fancy animations
+                that would distract from the faces themselves.
+            </p>
+            <p>
+                The value proposition section uses a two-column layout with generous paragraph
+                space and that signature magenta accent bar you see throughout the system. That
+                electric pink serves as the platform's energy source—in a category dominated by
+                blues, I wanted Tellit to feel distinctly different. Magenta conveys creativity,
+                confidence, and innovation.
+            </p>
+            <p>
+                But I paired it with restraint. The near-black text and generous whitespace create
+                breathing room, preventing the accent from overwhelming.
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image">
+                    <img src="assets/images/case-studies/tellit/team-section.svg" alt="Team section with professional headshots">
+                </div>
+                <p class="image-caption">Team section with clean grid layout and professional photography</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A Section -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Preemptive Answers</div>
+            <h2 class="section-title">The Strategic Q&A Section</h2>
+
+            <div class="text-block">
+                <p>
+                    This Q&A section was one of the most important design challenges. Instead of
+                    waiting for investors to email questions—which creates friction and delays—founders
+                    can preemptively answer the questions they know investors will ask.
+                </p>
+                <p>
+                    I designed a clean accordion pattern with smooth expansion animations and that
+                    blue accent bar showing the active question. The analytics dashboard tracks which
+                    questions get opened most frequently, giving founders data-driven insight into
+                    what concerns matter to their target investors.
+                </p>
+            </div>
+
+            <div class="quote-block">
+                <p class="quote-text">
+                    "This feature helped us close a $2M seed round. We identified concerns from the
+                    Q&A data and addressed them proactively before investor calls."
+                </p>
+                <div class="quote-author">— Tellit User, YC S23</div>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/qa-collapsed.svg" alt="Q&A section collapsed state">
+                    </div>
+                    <p class="image-caption">Q&A accordion in collapsed state</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/tellit/qa-expanded.svg" alt="Q&A section expanded state">
+                    </div>
+                    <p class="image-caption">Expanded question with full answer and analytics tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Dashboard -->
+    <section class="content-section">
+        <div class="section-subtitle">Actionable Insights</div>
+        <h2 class="section-title">Analytics Dashboard</h2>
+
+        <div class="text-block">
+            <p>
+                This was the hardest design challenge. How do you visualize complex engagement
+                data in a way that's instantly understandable to busy founders?
+            </p>
+            <p>
+                I started by listing every metric we could track—20+ potential data points. Then
+                I ruthlessly prioritized based on one question: <strong>What decisions do founders
+                need to make?</strong>
+            </p>
+            <p>
+                The final dashboard focuses on four core insights: <strong>Who's interested?
+                What's working? What questions matter? How are my files performing?</strong>
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image tall">
+                    <img src="assets/images/case-studies/tellit/analytics-dashboard.svg" alt="Full analytics dashboard">
+                </div>
+                <p class="image-caption">Complete analytics dashboard with New Leads, Leading Firms, Leading Q&A, and File Downloads widgets</p>
+            </div>
+        </div>
+
+        <div class="text-block margin-top-xl">
+            <p>
+                Notice the <strong>"Complete Your Tellit"</strong> progress widget at the top. This
+                gamifies the setup process—showing founders what's incomplete and gently guiding them
+                toward best practices. It's one of my favorite subtle touches because it serves triple
+                duty: gamification, reminder, and guidance—all without being preachy.
+            </p>
+            <p>
+                Each widget is independently scannable—you get the core insight in 3 seconds, but
+                can dig deeper if needed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Design System -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Foundation</div>
+            <h2 class="section-title">The Design System Behind the Screens</h2>
+
+            <div class="text-block">
+                <p>
+                    From day one, I knew this needed a proper design system. Tellit isn't just one
+                    page—it's marketing site, investor pages, editor views, analytics dashboards,
+                    and settings panels.
+                </p>
+                <p>
+                    I built a token-based system where every color, spacing value, and typography
+                    size references a central source of truth. The accent color appears consistently
+                    across CTAs, section dividers, and interactive elements. The spacing system uses
+                    a 4px base unit with Fibonacci-inspired scaling that creates natural rhythm.
+                </p>
+                <p>
+                    <strong>This system added two weeks to the timeline, but it saved hundreds of
+                    hours downstream.</strong> When we added new features, everything felt visually
+                    cohesive without requiring new design work. The engineering team could implement
+                    screens without constantly asking clarifying questions.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Color Tokens</h3>
+                    <p class="feature-description">
+                        Complete palette with semantic naming: primary, secondary, accent,
+                        success, warning, error. Each with dark/light variants for accessibility.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Typography Scale</h3>
+                    <p class="feature-description">
+                        Modular scale from 12px to 64px with consistent line heights and
+                        letter spacing. Separate scales for display, heading, and body text.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Spacing System</h3>
+                    <p class="feature-description">
+                        4px base unit creating rhythm: 4, 8, 12, 16, 24, 32, 48, 64, 96, 128px.
+                        Applied consistently to padding, margins, and gaps.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Component Library</h3>
+                    <p class="feature-description">
+                        45+ reusable components with documented props, states, and variations.
+                        Each component designed for composition and flexibility.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process & Iteration -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design Process</div>
+            <h2 class="section-title">Three Major Iterations</h2>
+
+            <div class="text-block">
+                <p>
+                    The investor page architecture went through three major iterations. Sometimes
+                    the answer isn't more clever information architecture—it's less. The sectioned
+                    scroll is technically the simplest solution, but it took three iterations to
+                    realize simple was right.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Everything Visible</h3>
+                    <p class="feature-description">
+                        First attempt: Show everything at once on a single long-scroll page.
+                        <strong>Problem:</strong> It was overwhelming. Investors didn't know
+                        where to start. Everything competed for attention equally.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Tab-Based Sections</h3>
+                    <p class="feature-description">
+                        Second attempt: Tab-based sections—Overview, Pitch Deck, Team, Q&A.
+                        <strong>Problem:</strong> Content felt hidden. Investors couldn't see
+                        the full picture without clicking through multiple tabs.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">Sectioned Scroll</h3>
+                    <p class="feature-description">
+                        <strong>The breakthrough:</strong> Sectioned scroll with progressive
+                        disclosure. The hero grabs attention, then value proposition sets
+                        context, then natural flow down the page. Solved discoverability AND analytics.
                     </p>
                 </div>
             </div>
@@ -145,136 +470,232 @@
             <div class="image-grid">
                 <div>
                     <div class="case-image">
-                        <img src="assets/images/case-studies/tellit/cards-grid.svg" alt="Company card grid with filtering sidebar">
+                        <img src="assets/images/case-studies/tellit/wireframe-iteration-1.svg" alt="Wireframe iteration 1: Everything visible">
                     </div>
-                    <p class="image-caption">Company card grid with filtering sidebar</p>
+                    <p class="image-caption">Iteration 1: Everything visible (overwhelming)</p>
                 </div>
                 <div>
                     <div class="case-image">
-                        <img src="assets/images/case-studies/tellit/search-filters.svg" alt="Search and filter interactions">
+                        <img src="assets/images/case-studies/tellit/wireframe-iteration-3.svg" alt="Wireframe iteration 3: Sectioned scroll">
                     </div>
-                    <p class="image-caption">Search and filter interactions</p>
+                    <p class="image-caption">Iteration 3: Sectioned scroll (final solution)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="content-section gray">
-        <div class="section-wrapper">
-            <div class="section-subtitle">Core Features</div>
-            <h2 class="section-title">Technical Implementation</h2>
-
-            <div class="text-block">
-                <p>
-                    <strong>Design token system:</strong> Extracted all colors, typography, 
-                    spacing, and shadows from Figma into a comprehensive token system. This 
-                    ensures pixel-perfect fidelity to the original designs while maintaining 
-                    flexibility for theme variations.
-                </p>
-                <p>
-                    <strong>Component architecture:</strong> Built modular React components 
-                    that mirror the Figma design structure. Each component is self-contained 
-                    with props for customization, making them reusable across the application.
-                </p>
-                <p>
-                    <strong>State management:</strong> Implemented local state for filtering, 
-                    search, and user interactions. The architecture is designed to scale to 
-                    more complex state management solutions as needed.
-                </p>
-                <p>
-                    <strong>Responsive design:</strong> Used Tailwind CSS utility classes 
-                    and custom breakpoints to create a fluid, responsive layout that works 
-                    beautifully from mobile to 4K displays.
-                </p>
-            </div>
-
-            <div class="image-grid single">
-                <div>
-                    <div class="case-image tall">
-                        <img src="assets/images/case-studies/tellit/full-directory.svg" alt="Full directory interface showing all components in context">
-                    </div>
-                    <p class="image-caption">Full directory interface showing all components in context</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Design Decisions -->
+    <!-- Key Pivots -->
     <section class="content-section">
-        <div class="section-subtitle">Design Philosophy</div>
-        <h2 class="section-title">Principles That Guided Development</h2>
-
-        <div class="text-block">
-            <p>
-                <strong>Consistency over cleverness:</strong> Every component follows the same 
-                design language established in Figma. Color usage, spacing, typography—all 
-                adhere to the token system without exception. This creates a cohesive experience 
-                that feels polished and professional.
-            </p>
-            <p>
-                <strong>Information hierarchy:</strong> Company cards present information in a 
-                clear order of importance—logo and name first, then description, then metadata. 
-                This hierarchy remains consistent across all cards, making scanning efficient.
-            </p>
-            <p>
-                <strong>Performance matters:</strong> The prototype handles hundreds of company 
-                cards without performance degradation. Filtering and search happen instantly, 
-                with no perceptible lag, creating a responsive feel.
-            </p>
-            <p>
-                <strong>From design to code:</strong> The development process emphasized maintaining 
-                100% fidelity to the Figma designs. Every pixel, every spacing value, every 
-                interaction matches the original design vision.
-            </p>
-        </div>
+        <div class="section-subtitle">Critical Feedback</div>
+        <h2 class="section-title">The Access Control Pivot</h2>
 
         <div class="quote-block">
             <p class="quote-text">
-                "The goal was pixel-perfect implementation—not just close, but identical to 
-                the Figma designs. Design tokens made this possible at scale."
+                "I don't want to micromanage access per file. I just want to know: Should this
+                investor have access or not?"
             </p>
-            <div class="quote-author">— Project Development Notes</div>
+            <div class="quote-author">— Early access founder, Week 3 testing</div>
+        </div>
+
+        <div class="text-block">
+            <p>
+                One of the most valuable pieces of feedback came from an early access founder.
+                Our initial design had separate permission levels for decks, one-pagers, and
+                other materials—very granular control.
+            </p>
+            <p>
+                That single piece of feedback led us to simplify to <strong>global access control
+                per lead</strong>. One toggle: access or no access. The entire access management
+                system became 3x simpler, and founders actually used it instead of ignoring it
+                because it was too complex.
+            </p>
+            <p>
+                This taught me: <strong>Sometimes founders don't want more control. They want
+                less cognitive load.</strong>
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>Before: Granular Permissions</h3>
+                <p>
+                    Separate access controls for pitch deck, one-pager, financials, team bios,
+                    and supporting documents. Required 5+ decisions per investor. Founders found
+                    it overwhelming and often just gave everyone full access.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>After: Simple Toggle</h3>
+                <p>
+                    One switch per investor: access or no access. Simple, fast, actually used.
+                    Completion rate for setting permissions jumped from 23% to 89%.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- Impact -->
+    <!-- Results & Impact -->
     <section class="content-section white">
         <div class="section-wrapper">
             <div class="section-subtitle">Results</div>
-            <h2 class="section-title">Deliverables & Impact</h2>
+            <h2 class="section-title">Launch Metrics & User Impact</h2>
+
+            <div class="text-block">
+                <p>
+                    We launched MVP in September 2024 to 50 early access founders. Within the
+                    first month, the numbers told a compelling story. But the qualitative feedback
+                    was even more validating.
+                </p>
+            </div>
 
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Design fidelity to Figma</div>
+                    <div class="stat-number">376</div>
+                    <div class="stat-label">Total investor leads tracked</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">45+</div>
-                    <div class="stat-label">Reusable React components</div>
+                    <div class="stat-number">76</div>
+                    <div class="stat-label">Deck downloads</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">120+</div>
-                    <div class="stat-label">Design tokens documented</div>
+                    <div class="stat-number">3.5 min</div>
+                    <div class="stat-label">Avg time-on-page</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">2 weeks</div>
-                    <div class="stat-label">From design to prototype</div>
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Setup completion rate</div>
                 </div>
             </div>
 
             <div class="text-block margin-top-xl">
                 <p>
-                    The interactive prototype successfully demonstrated the full user experience, 
-                    allowing stakeholders to interact with the interface before development began. 
-                    This caught several UX issues early and validated the design direction.
+                    One founder told us Tellit helped them close a $2M seed round by identifying
+                    a warm lead they would have otherwise ignored—an investor who viewed their
+                    page four times in one day. They prioritized outreach and closed a term sheet
+                    within three weeks.
                 </p>
                 <p>
-                    The comprehensive design token system and component library created during 
-                    prototyping became the foundation for production development, significantly 
-                    reducing the time needed to build the actual application.
+                    Our product team used Tellit to raise our own seed round—using the platform
+                    to pitch investors. We closed $1.5M with 89 investor views tracked, proving
+                    the concept works in real fundraising scenarios.
                 </p>
             </div>
+        </div>
+    </section>
+
+    <!-- Key Learnings -->
+    <section class="content-section">
+        <div class="section-subtitle">Reflections</div>
+        <h2 class="section-title">Five Critical Lessons</h2>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-number">01</div>
+                <h3 class="feature-title">Design Systems Are Worth It</h3>
+                <p class="feature-description">
+                    The upfront investment in a comprehensive design token system paid dividends
+                    throughout the project. New features felt cohesive without additional design work.
+                </p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">02</div>
+                <h3 class="feature-title">Founders Need Confidence</h3>
+                <p class="feature-description">
+                    The design work that mattered most wasn't fancy animations—it was the care
+                    and polish that made founders feel professional and prepared.
+                </p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">03</div>
+                <h3 class="feature-title">Data Without Action Is Noise</h3>
+                <p class="feature-description">
+                    Early dashboard designs tried to show everything we tracked. It was overwhelming.
+                    The breakthrough came from asking "What decision should this data drive?"
+                </p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">04</div>
+                <h3 class="feature-title">Accessibility Makes Design Better</h3>
+                <p class="feature-description">
+                    Designing with constraints from day one didn't limit creativity—it forced
+                    better decisions. High contrast text is easier for everyone to read.
+                </p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">05</div>
+                <h3 class="feature-title">Mobile Isn't an Afterthought</h3>
+                <p class="feature-description">
+                    40% of investor views happen on phones. Redesigning for mobile after screens
+                    were "done" was painful. Future projects: design mobile simultaneously with desktop.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Next -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Looking Forward</div>
+            <h2 class="section-title">What I'd Do Differently</h2>
+
+            <div class="two-column">
+                <div class="insight-box">
+                    <h3>What Worked</h3>
+                    <p>
+                        The design system foundation provided consistency across all features.
+                        The sectioned page architecture balanced discoverability with analytics.
+                        The actionable analytics dashboard focused on decisions, not just data.
+                    </p>
+                </div>
+                <div class="insight-box">
+                    <h3>What Could Improve</h3>
+                    <p>
+                        The onboarding flow needs templates, not blank canvases. File management
+                        needs more depth for supporting documents. The mobile editing experience
+                        is currently desktop-only.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    <strong>What I'd do differently:</strong> Start with templates to reduce
+                    setup anxiety. Build the file manager earlier in the process. Test with
+                    actual investors, not just founders. Design email integrations from the start.
+                </p>
+                <p>
+                    <strong>What's next:</strong> The opportunities are huge. AI-powered pitch
+                    optimization, investor network effects, integrated fundraising CRM,
+                    community-driven Q&A libraries. We're just getting started.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Thought -->
+    <section class="content-section">
+        <div class="quote-block">
+            <p class="quote-text">
+                "The best design replaces anxiety with clarity."
+            </p>
+            <div class="quote-author">— Project Reflection</div>
+        </div>
+
+        <div class="text-block">
+            <p>
+                Tellit taught me that the best design work often isn't visible to users at all.
+                It's the system that makes everything consistent. The constraints that prevent
+                bad decisions. The defaults that create beautiful outcomes without requiring expertise.
+            </p>
+            <p>
+                Fundraising is never easy. My goal wasn't to make it easy—my goal was to replace
+                anxiety with clarity, guesswork with data, and scattered chaos with organized
+                professionalism.
+            </p>
         </div>
     </section>
 
@@ -282,7 +703,7 @@
     <section class="next-project">
         <h2>Next Project</h2>
         <p>Explore another case study from my portfolio</p>
-        <a href="case-study-able.html" class="next-btn">Walkthrough Experience for Able →</a>
+        <a href="case-study-smart-list.html" class="next-btn">Smart List Builder →</a>
     </section>
 
     <!-- Footer -->
@@ -299,7 +720,7 @@
         // Custom Cursor
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
-        
+
         let mouseX = 0, mouseY = 0;
         let followerX = 0, followerY = 0;
 
