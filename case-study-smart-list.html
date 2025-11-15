@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart List Builder - David Budzik</title>
+    <link rel="stylesheet" href="css/case-study-smart-list.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <div class="logo">David Budzik</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="project-meta">
+            <div class="meta-item">
+                <div class="meta-label">Client</div>
+                <div class="meta-value">Ovalix - AI Governance & Security Platform</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Role</div>
+                <div class="meta-value">Lead Product Designer</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Timeline</div>
+                <div class="meta-value">6 weeks (2024)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Disciplines</div>
+                <div class="meta-value">UX Design, Interaction Design, Design Systems</div>
+            </div>
+        </div>
+
+        <h1 class="case-title">Smart List Builder</h1>
+        <p class="case-intro">
+            Designing a dual-mode interface that makes pattern matching accessible to non-technical
+            users. A progressive disclosure approach that brings regex power to compliance officers
+            and security administrators managing AI governance policies.
+        </p>
+
+        <div class="hero-image">
+            <img src="assets/images/case-studies/smart-list/hero.png" alt="Smart List Builder interface showing dual-mode pattern editor">
+        </div>
+    </section>
+
+    <!-- The Observation -->
+    <section class="content-section">
+        <div class="section-subtitle">The Observation</div>
+        <h2 class="section-title">A Quote That Became the North Star</h2>
+
+        <div class="quote-block highlight">
+            <p class="quote-text">
+                "I'm scared I'll break something, so I just add 47 individual domains."
+            </p>
+            <div class="quote-author">— Compliance Officer, Financial Services Company</div>
+        </div>
+
+        <div class="text-block">
+            <p>
+                During a customer support session at Ovalix, I watched a compliance officer at a
+                financial services company configure an AI data sharing policy. She was controlling
+                which email domains could share data with ChatGPT—a high-stakes AI governance task
+                where wrong configuration could expose sensitive data to AI services.
+            </p>
+            <p>
+                She knew exactly what she needed (regex would be perfect), but the existing tools
+                forced an impossible choice between tedious repetitive entry and complex pattern
+                matching. This quote became the foundation for everything that followed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem Space -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Problem Space</div>
+            <h2 class="section-title">The Gap Between Simple and Complex</h2>
+
+            <div class="text-block">
+                <p>
+                    The problem wasn't lack of features—it was the absence of middle ground.
+                    Users felt inadequate, not empowered. They built workarounds rather than
+                    use the feature. In AI governance, this gap was more than an annoyance—it
+                    was a security and compliance blocker.
+                </p>
+            </div>
+
+            <div class="two-column">
+                <div class="insight-box">
+                    <h3>Simple Lists</h3>
+                    <p>
+                        Easy to use but painfully repetitive. Users manually enter dozens of
+                        individual items (email addresses, domain names, AI tool names) when
+                        patterns would work better. No way to express "all company domains" or
+                        "detect credit card numbers."
+                    </p>
+                </div>
+                <div class="insight-box">
+                    <h3>Pattern Matching</h3>
+                    <p>
+                        Powerful but intimidating. Regex syntax errors surface at runtime,
+                        creating anxiety in high-stakes compliance environments. No safety net,
+                        no guidance, no templates—just a blank field and fear of exposing
+                        sensitive data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">Context Switching Overhead</h3>
+                    <p class="feature-description">
+                        Mental model disruption in high-stakes AI governance environments.
+                        Users couldn't smoothly transition between simple and complex without
+                        feeling lost or overwhelmed.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">Regex Intimidation</h3>
+                    <p class="feature-description">
+                        Not just syntax anxiety—fear of compliance violations and data exposure.
+                        Healthcare teams needed HIPAA patterns, finance needed PII detection,
+                        all needed confidence.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">No Safety Net</h3>
+                    <p class="feature-description">
+                        Runtime errors could mean compliance violations. Validation happened too
+                        late, with no preview or testing capability. Users deployed policies
+                        without confidence they would work.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3 class="feature-title">Import Friction</h3>
+                    <p class="feature-description">
+                        Teams resorted to spreadsheets for AI governance rules. Bulk operations
+                        lacked intelligence and transparency, making migration from legacy
+                        systems painful and error-prone.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reframing -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Reframing</div>
+            <h2 class="section-title">What If It Was One Tool That Grew With You?</h2>
+
+            <div class="text-block">
+                <p>
+                    The breakthrough came from stopping to think of these as separate features.
+                    Instead of "Basic Tool" and "Advanced Tool," what if they were points on a
+                    spectrum? Progressive disclosure became the key principle.
+                </p>
+                <p>
+                    The toggle isn't a switcher—it's an amplifier. The same mental model,
+                    different depths. Complexity becomes opt-in, not mandatory. Make the
+                    transition feel natural, like turning up the volume rather than changing
+                    the channel.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- String Mode Solution -->
+    <section class="content-section">
+        <div class="section-subtitle">The Solution</div>
+        <h2 class="section-title">String Mode: Simple by Default</h2>
+
+        <div class="text-block">
+            <p>
+                The default experience requires zero learning curve. Open the modal, see a
+                single text field and one button. Type what you want to add, hit Add, and
+                it appears in the table. Success in under 30 seconds.
+            </p>
+            <p>
+                No configuration, no choices to make. Just the familiar pattern of adding
+                items to a list. This is "simple by default" in action—meeting users exactly
+                where they are.
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image">
+                    <img src="assets/images/case-studies/smart-list/string-mode.png" alt="String mode interface showing simple text input">
+                </div>
+                <p class="image-caption">String mode: one text field, one button, zero learning curve</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regex Mode Solution -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Powerful by Choice</div>
+            <h2 class="section-title">Regex Mode: Visible, Not Scary</h2>
+
+            <div class="text-block">
+                <p>
+                    When users toggle to Regex mode, they don't face a blank field. Instead,
+                    curated templates appear—each showing syntax, description, and type. This
+                    isn't just shortcuts; it's teaching through use.
+                </p>
+                <p>
+                    Templates cover 80% of use cases: email patterns, domain wildcards, SSN
+                    detection, credit card patterns, date formats. Users see regex with context,
+                    making the powerful accessible without dumbing it down.
+                </p>
+            </div>
+
+            <div class="two-column">
+                <div class="insight-box highlight">
+                    <h3>Template Library</h3>
+                    <p>
+                        Curated patterns for common AI governance scenarios. Each template shows
+                        the regex syntax alongside a plain-language description. Users learn by
+                        selecting, not by studying documentation.
+                    </p>
+                </div>
+                <div class="insight-box">
+                    <h3>Real-Time Validation</h3>
+                    <p>
+                        Immediate feedback as you type. Syntax errors appear instantly with
+                        specific messages, not generic warnings. Build confidence to experiment
+                        because you know immediately if you made a mistake.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/smart-list/regex-mode.png" alt="Regex mode with template dropdown">
+                    </div>
+                    <p class="image-caption">Template dropdown showing syntax + description + type</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/smart-list/validation.png" alt="Real-time validation showing error state">
+                    </div>
+                    <p class="image-caption">Real-time validation with specific error messages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mixed Lists & Table View -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Unified View</div>
+            <h2 class="section-title">Mixed Lists & Table Interface</h2>
+
+            <div class="text-block">
+                <p>
+                    Users don't think in pure categories. They need both simple entries AND
+                    patterns in the same list. The table view supports this coexistence with
+                    type badges that make scanning effortless.
+                </p>
+                <p>
+                    Inline editing reduces cognitive load—no mode switching required. Click to
+                    edit, changes save immediately. The interface respects existing mental models
+                    while adding sophisticated capabilities.
+                </p>
+            </div>
+
+            <div class="image-grid single">
+                <div>
+                    <div class="case-image tall">
+                        <img src="assets/images/case-studies/smart-list/table-view.png" alt="Table showing mixed string and regex entries">
+                    </div>
+                    <p class="image-caption">Table view with type indicators and inline editing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Import Flow -->
+    <section class="content-section">
+        <div class="section-subtitle">Bulk Operations</div>
+        <h2 class="section-title">Smart Import with Transparency</h2>
+
+        <div class="text-block">
+            <p>
+                Bulk operations are critical for migrating from legacy AI governance systems.
+                The import flow has intelligence—it infers types from patterns automatically—but
+                maintains transparency through an editable preview state.
+            </p>
+            <p>
+                Users review and adjust before committing. No mysterious magic, just smart
+                defaults with full control. Trust comes from seeing what will happen before
+                it happens.
+            </p>
+        </div>
+
+        <div class="image-grid single">
+            <div>
+                <div class="case-image">
+                    <img src="assets/images/case-studies/smart-list/import-flow.png" alt="CSV import interface with editable preview">
+                </div>
+                <p class="image-caption">Import flow: upload → preview → review → commit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Principles -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design Principles</div>
+            <h2 class="section-title">Framework for Every Decision</h2>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3 class="feature-title">Simple by Default, Powerful by Choice</h3>
+                    <p class="feature-description">
+                        Start with one text field. Advanced features are always one toggle away,
+                        but never forced. Complexity is opt-in, not mandatory.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 class="feature-title">Make Regex Visible, Not Scary</h3>
+                    <p class="feature-description">
+                        Show syntax with context. Templates educate through use. Real-time
+                        validation eliminates anxiety. Power without intimidation.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 class="feature-title">Feedback Before Commitment</h3>
+                    <p class="feature-description">
+                        Validate, preview, confirm. Users see results before they're permanent.
+                        Build confidence through transparency at every step.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <h3 class="feature-title">Respect Existing Mental Models</h3>
+                    <p class="feature-description">
+                        Standard patterns, expected behaviors. Tables for lists, toggles for
+                        modes, inline editing for quick changes. Familiar patterns reduce friction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Impact & Results</div>
+            <h2 class="section-title">Behavioral Change in AI Governance</h2>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">35%</div>
+                    <div class="stat-label">Increase in regex usage</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Reduction in support tickets</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">Success rate (up from 60%)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6 weeks</div>
+                    <div class="stat-label">Design to production</div>
+                </div>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    <strong>Most important: behavioral change.</strong> Non-technical security
+                    administrators started building PII detection patterns independently. Learning
+                    happened through use, not documentation. Healthcare teams built HIPAA
+                    compliance patterns in one afternoon. Finance teams created data classification
+                    rules without developer support.
+                </p>
+                <p>
+                    Customer teams sunset their spreadsheet-based AI governance workaround. The
+                    tool became their source of truth for controlling which AI services employees
+                    could use and what data could be shared.
+                </p>
+            </div>
+
+            <div class="quote-grid">
+                <div class="quote-box">
+                    <p>"I finally understand when to use regex for data patterns"</p>
+                    <div class="quote-source">Healthcare Administrator</div>
+                </div>
+                <div class="quote-box">
+                    <p>"The validation saved me from exposing PII to AI services"</p>
+                    <div class="quote-source">Compliance Officer</div>
+                </div>
+                <div class="quote-box">
+                    <p>"We built our entire HIPAA detection ruleset using the templates"</p>
+                    <div class="quote-source">Security Team Lead</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="content-section">
+        <div class="section-subtitle">Reflection</div>
+        <h2 class="section-title">What I Learned</h2>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>What Worked</h3>
+                <p>
+                    Progressive disclosure turned complexity into confidence. Template library
+                    became educational content, not just shortcuts. Real-time validation
+                    eliminated the biggest source of anxiety. Users felt smarter, not dumber.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>What I'd Do Differently</h3>
+                <p>
+                    Add pattern testing feature earlier. Invest more in import intelligence for
+                    edge cases. Plan for scale from the start—large lists need search and filter.
+                    Consider natural language input carefully (powerful but needs guardrails).
+                </p>
+            </div>
+        </div>
+
+        <div class="quote-block">
+            <p class="quote-text">
+                "Good design isn't about hiding complexity—it's about revealing it at the right
+                moment, with the right support. Sometimes the best interface makes users feel
+                smarter than they did before."
+            </p>
+            <div class="quote-author">— Key Learning</div>
+        </div>
+
+        <div class="text-block margin-top-xl">
+            <p>
+                <strong>Context beats documentation.</strong> Users learned regex through
+                templates and immediate feedback, not manuals. Trust comes from transparency—seeing
+                what will happen before it happens. Constraints (synchronous validation) became
+                features (instant feedback).
+            </p>
+            <p>
+                <strong>Make complexity opt-in.</strong> The toggle isn't a switcher; it's an
+                amplifier. Start simple, grow sophisticated. Same mental model, different depths.
+                This approach works across domains—from AI governance to any interface bridging
+                novice and expert users.
+            </p>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <h2>Next Project</h2>
+        <p>Explore another case study from my portfolio</p>
+        <a href="case-study-ai-security.html" class="next-btn">AI Agent Security Platform →</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#work">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+    </script>
+</body>
+</html>
