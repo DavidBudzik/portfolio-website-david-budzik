@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Scattered to Structured - Able Insights - David Budzik</title>
+    <link rel="stylesheet" href="css/case-study-able-insights.css">
+</head>
+<body id="top">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <div class="logo">David Budzik</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="project-meta">
+            <div class="meta-item">
+                <div class="meta-label">Platform</div>
+                <div class="meta-value">Able Insights</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Role</div>
+                <div class="meta-value">Product Designer (Lead End-to-End)</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Timeline</div>
+                <div class="meta-value">6 months</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Disciplines</div>
+                <div class="meta-value">Information Architecture, AI/ML Design, Data Visualization, Design Systems</div>
+            </div>
+        </div>
+
+        <h1 class="case-title">From Scattered to Structured</h1>
+        <p class="case-intro">
+            Designing a scalable information architecture for an AI-powered research platform that transforms
+            how analysts organize, refine, and share market intelligence reports.
+        </p>
+
+        <div class="hero-image">
+            <img src="assets/images/case-studies/able-insights/research_screen.png" alt="Able Insights research interface with information architecture">
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="content-section">
+        <div class="section-subtitle">The Story</div>
+        <h2 class="section-title">Research teams drowning in data</h2>
+        <div class="text-block">
+            <p>
+                Research teams were drowning in their own data. I designed an information architecture that turned
+                chaos into clarity—transforming how analysts create, organize, and share market intelligence reports.
+            </p>
+            <p>
+                What started as scattered queries across multiple tools became a unified system where AI and human
+                judgment work together. The result: a scalable report structure that handles everything from 50 to
+                5,000 companies without breaking.
+            </p>
+        </div>
+
+        <div class="two-column">
+            <div class="insight-box">
+                <h3>The Challenge</h3>
+                <p>
+                    Users were manually copying data between queries, losing context, and spending hours assembling
+                    reports from fragmented sources. There was no consistent way to build, refine, or share research.
+                </p>
+            </div>
+            <div class="insight-box highlight">
+                <h3>The Solution</h3>
+                <p>
+                    I designed an expandable report architecture with progressive disclosure—a "living container"
+                    that captures the entire research journey from initial query (937 companies) through filtering
+                    and refinement (339 → 42 companies) to final insights.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Understanding the Problem</div>
+            <h2 class="section-title">The Research Workflow Was Broken</h2>
+
+            <div class="text-block">
+                <p>
+                    When I joined the project, analysts described their workflow like this: "I ask the AI a question,
+                    get 900 companies back, then spend the next 3 hours copying data into spreadsheets, cross-referencing
+                    sources, and trying to remember which filters I applied."
+                </p>
+                <p>
+                    The core issues were clear:
+                </p>
+            </div>
+
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3 class="principle-title">No transparency</h3>
+                    <p class="principle-description">
+                        Users couldn't see <em>how</em> they got from 937 companies to their final 42. The filtering
+                        logic was invisible.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Loss of context</h3>
+                    <p class="principle-description">
+                        After applying 6 filters, analysts forgot which criteria removed which companies—making it
+                        impossible to explain their methodology to stakeholders.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Manual assembly required</h3>
+                    <p class="principle-description">
+                        Every report meant copying charts, tables, and summaries from different parts of the tool into
+                        PowerPoint or Word.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">No repeatability</h3>
+                    <p class="principle-description">
+                        When a client asked to update last month's research, analysts had to start over from scratch—no
+                        saved workflows, no memory of the process.
+                    </p>
+                </div>
+            </div>
+
+            <div class="callout-box margin-top-xl">
+                <h3>What Was At Stake</h3>
+                <p>
+                    This wasn't just about workflow efficiency—it was about trust and credibility. When analysts can't
+                    explain their methodology, stakeholders lose confidence in the insights. Research becomes defenseless
+                    opinion rather than evidence-based analysis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="content-section gray">
+        <div class="section-wrapper">
+            <div class="section-subtitle">The Innovation</div>
+            <h2 class="section-title">A Report Architecture That Shows Its Work</h2>
+
+            <div class="text-block">
+                <p>
+                    I redesigned research as a progressive disclosure system where every step of the journey is visible,
+                    organized, and reusable.
+                </p>
+            </div>
+
+            <div class="callout-box">
+                <h3>Core Innovation: The Expandable Report Container</h3>
+                <p>
+                    Instead of showing 937 companies in one overwhelming table, I created a three-tier structure:
+                </p>
+                <ul class="expandable-list">
+                    <li><strong>Added by queries</strong> (937 companies) — Shows what the AI found initially</li>
+                    <li><strong>Removed by filtering</strong> (895 companies) — Makes the elimination process transparent</li>
+                    <li><strong>Final list</strong> (42 companies) — The refined, actionable result</li>
+                </ul>
+                <p>
+                    Each tier is collapsible, with controls to "See all," "Hide," or drill into details. This creates
+                    a visual funnel that tells the story: "We started here, refined it this way, and ended up here."
+                </p>
+            </div>
+
+            <div class="image-grid three-column">
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able-insights/added_by_queries.png" alt="Added by queries section showing 937 companies">
+                    </div>
+                    <p class="image-caption"><strong>Added by queries:</strong> 937 companies from initial AI results</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able-insights/removed_by_filters.png" alt="Removed by filtering section showing 895 companies">
+                    </div>
+                    <p class="image-caption"><strong>Removed by filtering:</strong> 895 companies filtered out with applied criteria</p>
+                </div>
+                <div>
+                    <div class="case-image">
+                        <img src="assets/images/case-studies/able-insights/final_list.png" alt="Final list section showing 42 companies">
+                    </div>
+                    <p class="image-caption"><strong>Final list:</strong> 42 refined, actionable companies</p>
+                </div>
+            </div>
+
+            <h3 class="feature-heading">Feature: Query Transparency</h3>
+            <div class="text-block">
+                <p>
+                    When users expand "Added by queries," they see exactly which questions they asked and which questions
+                    the AI added to help. This makes the collaboration between human and machine explicit:
+                </p>
+                <ul class="feature-list">
+                    <li>"13 questions you asked to create the list"</li>
+                    <li>"3 questions added with our help"</li>
+                </ul>
+                <p>
+                    Every query shows how many companies it contributed (+42, +70, +61), creating a mental model of how
+                    the research built up.
+                </p>
+            </div>
+
+            <h3 class="feature-heading">Feature: Filter Visualization</h3>
+            <div class="text-block">
+                <p>
+                    The "Removed by filtering" section doesn't just hide companies—it shows <em>why</em> they were filtered out.
+                    Users see:
+                </p>
+                <ul class="feature-list">
+                    <li>6 filters were applied to this list</li>
+                    <li>Revenue > $3M USD</li>
+                    <li>Year Founded: 2000+</li>
+                    <li>Employees: 20-1000</li>
+                </ul>
+                <p>
+                    This transparency is critical when presenting to stakeholders: "We eliminated 895 companies because they
+                    didn't meet these 6 criteria."
+                </p>
+            </div>
+
+            <h3 class="feature-heading">Feature: Auto-Generated Domain Reports</h3>
+            <div class="text-block">
+                <p>
+                    Once users reach their final list, they can generate a "Domain Report"—a publication-ready document that includes:
+                </p>
+                <ul class="feature-list">
+                    <li>Executive summary with key insights</li>
+                    <li>Companies list with funnel visualization</li>
+                    <li>Investment landscape charts</li>
+                    <li>Technology cluster analysis</li>
+                    <li>Market trends and highlights</li>
+                </ul>
+                <p>
+                    The entire report is generated from the structured data, maintaining consistency and saving hours of manual work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Principles -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Guiding Principles</div>
+            <h2 class="section-title">Information Architecture Foundations</h2>
+
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3 class="principle-title">Progressive Disclosure Over Immediate Complexity</h3>
+                    <p class="principle-description">
+                        Don't show 937 companies at once. Reveal information in layers as users need it. The default
+                        view shows summaries; drill-downs reveal details.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Make The Invisible Visible</h3>
+                    <p class="principle-description">
+                        Research methodology should be as transparent as the results. Show which queries ran, which
+                        filters applied, and how many companies each decision affected.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Design For Repeatability</h3>
+                    <p class="principle-description">
+                        Every report should be updateable. If a user runs the same research next month, they should be
+                        able to regenerate it with fresh data without remembering every step.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Respect The Human-AI Collaboration</h3>
+                    <p class="principle-description">
+                        The AI suggests queries, but humans decide which to use. The interface should celebrate this
+                        partnership, not hide it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="content-section">
+        <div class="section-subtitle">Design Process</div>
+        <h2 class="section-title">From Discovery to Launch</h2>
+
+        <h3 class="process-heading">Discovery: Understanding The Chaos</h3>
+        <div class="text-block">
+            <p>
+                I analyzed existing user behavior data—looking at the actual questions users were asking, the filters
+                they applied, and where they got stuck. I worked closely with our sales team to gather client feedback
+                and understand pain points reported in support tickets.
+            </p>
+            <p>
+                The breakthrough: Research isn't a single query—it's a <em>process</em> that needs to be documented as it
+                happens. The funnel from 937 → 42 companies needed to be visible at every step.
+            </p>
+        </div>
+
+        <div class="quote-block">
+            "By the time I finish a report, I can't remember how I got here. If my manager asks 'why did you exclude
+            this company?' I have to guess." — From client feedback via sales team
+        </div>
+
+        <h3 class="process-heading">Ideation: From Linear To Layered</h3>
+        <div class="text-block">
+            <p>
+                My first sketches treated reports like documents: header, body, footer, done. But that model doesn't
+                match how research actually works.
+            </p>
+            <p>
+                The pivot came when I started thinking about research as a funnel—or more accurately, a <strong>transparent
+                tunnel</strong> that users travel through. Users needed to see the entire tunnel, not just their current position.
+                Every stage should be collapsible but visible—so analysts could zoom out to see the big picture (937 → 42) or
+                drill in to understand exactly what happened at each step.
+            </p>
+            <p>
+                This wasn't just about showing data—it was about building a narrative. The funnel tells a story: "We cast a
+                wide net with AI, refined it with business criteria, and arrived at these 42 high-confidence targets."
+            </p>
+        </div>
+
+        <h3 class="process-heading">Iteration: Testing With Real Data</h3>
+        <div class="text-block">
+            <p>
+                I built interactive prototypes with real company data (339 agritech companies in one test, 141 AI companies
+                in another). This exposed problems immediately and led to key solutions:
+            </p>
+            <ul class="iteration-list">
+                <li><strong>Problem:</strong> When all 937 companies were visible, users felt overwhelmed and gave up.<br>
+                    <strong>Solution:</strong> Default to showing summaries with counts (937, 339, 42) and let users expand to see details.</li>
+                <li><strong>Problem:</strong> Users didn't understand why companies disappeared when they applied filters.<br>
+                    <strong>Solution:</strong> Created the "Removed by filtering" section that explicitly shows what got filtered out and why.</li>
+                <li><strong>Problem:</strong> The query list was just text—boring and hard to scan.<br>
+                    <strong>Solution:</strong> Added icons for query types (🔍 search, 🤖 AI-suggested) and contribution counts (+42, +70).</li>
+            </ul>
+        </div>
+
+        <h3 class="process-heading">Collaboration: Building With Engineering</h3>
+        <div class="text-block">
+            <p>
+                Working with engineers, we discovered that the expandable architecture had a bonus benefit:
+                <strong>performance</strong>. By rendering only visible sections, we could handle massive datasets
+                (5,000+ companies) without the browser choking.
+            </p>
+            <p>
+                This validated the design principle: progressive disclosure isn't just good UX—it's good engineering.
+            </p>
+        </div>
+    </section>
+
+    <!-- Design Details -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Design System</div>
+            <h2 class="section-title">Visual Language & Components</h2>
+
+            <h3 class="detail-heading">Color System: Stage-Based Identity</h3>
+            <div class="text-block">
+                <p>
+                    The visual design needed to support, not compete with, complex data. I established a color-coding
+                    system where each funnel stage has its own identity:
+                </p>
+                <ul class="color-list">
+                    <li><strong style="color: #88c8db;">Light Blue (#E8F4F8)</strong> — "Added by queries" (neutral, informative)</li>
+                    <li><strong style="color: #e8c4ad;">Peach (#FFE8D9)</strong> — "Removed by filtering" (warm, de-emphasized)</li>
+                    <li><strong style="color: #a8d4bb;">Mint Green (#D4F4DD)</strong> — "Final list" (fresh, actionable)</li>
+                </ul>
+            </div>
+
+            <h3 class="detail-heading">Typography & Data Display</h3>
+            <div class="text-block">
+                <p>
+                    Typography is Inter throughout—Medium weight for headings, Regular for body text, with tabular
+                    figures ensuring perfect numerical alignment in data tables.
+                </p>
+            </div>
+
+            <h3 class="detail-heading">Component Architecture</h3>
+            <div class="text-block">
+                <p>
+                    Every element was designed as a reusable component: stat cards, filter chips, company rows, and
+                    chart modules. This systematic approach paid immediate dividends—these components are now used
+                    across 12 different features in the platform.
+                </p>
+                <p>
+                    The interaction model emphasizes progressive disclosure: smooth expand/collapse animations (200ms),
+                    clear hover states, and "See all/Hide" toggles that give users control over information density.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="content-section">
+        <div class="section-subtitle">Impact</div>
+        <h2 class="section-title">Results & User Response</h2>
+
+        <div class="text-block">
+            <p>
+                The expandable report architecture launched and became the default research experience for all Able
+                Insights users.
+            </p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">75%</div>
+                <div class="stat-label">Time reduction in report creation</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Target adoption rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Companies supported per report</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Platform features using design system</div>
+            </div>
+        </div>
+
+        <h3 class="impact-heading">User Feedback</h3>
+        <div class="quote-block">
+            "I can finally explain my methodology to my boss. The filter visualization is a game-changer."
+        </div>
+
+        <div class="quote-block">
+            "I used to dread updating reports. Now I just click 'Update' and it re-runs everything."
+        </div>
+
+        <div class="quote-block">
+            "The Domain Report is better than what I was making manually in PowerPoint."
+        </div>
+    </section>
+
+    <!-- Learnings Section -->
+    <section class="content-section white">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Key Learnings</div>
+            <h2 class="section-title">What This Project Taught Me</h2>
+
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3 class="principle-title">Research isn't linear—it's fractal</h3>
+                    <p class="principle-description">
+                        Users need to zoom in (see all 937 companies) and zoom out (just show me the 42 finalists) fluidly.
+                        The expandable structure enables this mental model.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Users don't want AI to be invisible</h3>
+                    <p class="principle-description">
+                        They want to understand <em>what the AI did</em>. Showing "3 questions added with our help" builds
+                        trust. Hiding AI contributions creates suspicion.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Systems thinking scales products</h3>
+                    <p class="principle-description">
+                        When you design one component well and make it reusable, you unlock 10 other features. The
+                        "Explore Process" pattern is now used for query history, saved searches, and report versioning.
+                    </p>
+                </div>
+
+                <div class="principle-item">
+                    <h3 class="principle-title">Transparency is a feature, not a bug</h3>
+                    <p class="principle-description">
+                        Users initially wanted faster filtering. What they really wanted was to understand and defend
+                        their filtering decisions. Making the process visible solved the real problem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="content-section">
+        <div class="section-wrapper">
+            <div class="section-subtitle">Reflection</div>
+            <h2 class="section-title">The Path Forward</h2>
+
+            <div class="text-block">
+                <p>
+                    This case study showcases a design challenge I'm passionate about: <strong>taking invisible, complex
+                    processes and making them visible, understandable, and scalable.</strong>
+                </p>
+                <p>
+                    The expandable report architecture isn't just a UI pattern—it's a new mental model for how AI-assisted
+                    research should work. By designing for transparency, repeatability, and progressive disclosure, we
+                    created a system that respects both the power of AI and the judgment of human experts.
+                </p>
+            </div>
+
+            <h3 class="next-feature-heading">What's Next: Scheduled Reports</h3>
+            <div class="text-block">
+                <p>
+                    The architecture we built enables something users have been requesting since day one: <strong>scheduled
+                    reports</strong>. Because every report captures its complete methodology (queries + filters + parameters),
+                    users can now set reports to auto-regenerate on a schedule—weekly, monthly, or quarterly.
+                </p>
+                <p>
+                    When a scheduled report runs, it will:
+                </p>
+                <ul class="feature-list">
+                    <li>Re-execute the exact same queries with fresh data</li>
+                    <li>Apply the same filters to new company datasets</li>
+                    <li>Highlight what changed since the last run (new companies added, companies that no longer qualify)</li>
+                    <li>Send email notifications with a "what's different" summary</li>
+                </ul>
+                <p>
+                    This transforms research from a one-time activity into an ongoing monitoring system. The expandable
+                    architecture makes this possible because it preserves the complete research methodology, not just the
+                    final results.
+                </p>
+            </div>
+
+            <div class="text-block margin-top-xl">
+                <p>
+                    The work continues—there's always more to improve—but I'm proud of building a foundation that scales
+                    with the product's ambitions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <h2>View More Work</h2>
+        <p>Return to portfolio or explore another case study</p>
+        <a href="index.html#work" class="next-btn">Back to All Projects</a>
+    </section>
+
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">
+        <span>Scroll to top</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#work">All Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+        });
+
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            cursorFollower.style.transform = `translate(${followerX - 20}px, ${followerY - 20}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
+
+        // Hover effects
+        const hoverElements = document.querySelectorAll('a, button, .insight-box');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        if (scrollTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 320) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollTopBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>
