@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme Generator — David Budzik</title>
+    <link rel="stylesheet" href="css/color-theme-generator.css">
+</head>
+<body id="top">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><a href="index.html">David Budzik</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">AI-Powered Design Tool</div>
+            <h1 class="hero-title">
+                Color Theme<br>
+                <strong>Generator</strong>
+            </h1>
+            <p class="hero-description">
+                Generate production-ready color palettes with complete design systems—including
+                primary, secondary, accent, semantic colors, and interactive states—all from a
+                simple description.
+            </p>
+        </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section class="generator-section">
+        <div class="generator-container">
+
+            <!-- Input Area -->
+            <div class="input-area reveal">
+                <label for="theme-input" class="input-label">Describe your theme</label>
+                <div class="input-wrapper">
+                    <textarea
+                        id="theme-input"
+                        class="theme-input"
+                        placeholder="E.g., Modern fintech with deep teal primary and gold accents"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="input-actions">
+                    <button id="generate-btn" class="btn-primary">
+                        <span class="btn-text">Generate Theme</span>
+                        <span class="btn-loader" style="display: none;">
+                            <svg class="spinner" viewBox="0 0 50 50">
+                                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                            </svg>
+                        </span>
+                    </button>
+                    <button id="use-example-btn" class="btn-secondary">Use Example</button>
+                </div>
+                <div class="example-prompts">
+                    <div class="example-label">Try an example:</div>
+                    <button class="example-tag" data-prompt="Modern startup with vibrant blue primary and pink accents">Vibrant Startup</button>
+                    <button class="example-tag" data-prompt="Enterprise SaaS with professional navy blue and subtle green accents">Enterprise SaaS</button>
+                    <button class="example-tag" data-prompt="Creative agency with bold purple primary and electric yellow accents">Creative Agency</button>
+                    <button class="example-tag" data-prompt="Healthcare platform with calming teal and soft coral accents">Healthcare</button>
+                    <button class="example-tag" data-prompt="E-commerce with warm orange primary and deep forest green accents">E-commerce</button>
+                </div>
+            </div>
+
+            <!-- Results Area -->
+            <div id="results-area" class="results-area" style="display: none;">
+
+                <!-- Action Bar -->
+                <div class="results-header">
+                    <h2 class="results-title">Generated Theme</h2>
+                    <div class="results-actions">
+                        <button id="view-grid-btn" class="view-toggle active" data-view="grid">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="12" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="2" y="12" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="12" y="12" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                            Grid
+                        </button>
+                        <button id="view-list-btn" class="view-toggle" data-view="list">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="3" width="16" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="2" y="8.5" width="16" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <rect x="2" y="14" width="16" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                            List
+                        </button>
+                        <button id="export-btn" class="btn-export">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.66675 6.66667L8.00008 10L11.3334 6.66667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 10V2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Export JSON
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Color Palette Display -->
+                <div id="palette-display" class="palette-display grid-view">
+                    <!-- Colors will be dynamically inserted here -->
+                </div>
+
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message" style="display: none;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                </svg>
+                <div class="error-text">
+                    <div class="error-title">Failed to generate theme</div>
+                    <div class="error-description" id="error-description"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Example Themes Section -->
+    <section class="examples-section">
+        <div class="section-header">Example Themes</div>
+        <div class="examples-container reveal">
+            <p class="examples-intro">
+                Explore pre-generated themes across different industries and moods.
+                Click any theme to view details or use as a starting point.
+            </p>
+            <div class="examples-grid" id="examples-grid">
+                <!-- Example themes will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="section-header">How It Works</div>
+        <div class="process-container reveal">
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Describe Your Vision</h3>
+                    <p class="step-description">
+                        Enter a natural language description of your desired theme.
+                        Include colors, mood, industry, or any visual direction.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">AI Generates Complete System</h3>
+                    <p class="step-description">
+                        Our AI analyzes your input and generates a comprehensive color
+                        system with 11 color roles and interactive state variants.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Review & Refine</h3>
+                    <p class="step-description">
+                        View your palette in grid or list format. Adjust your description
+                        and regenerate until you achieve the perfect result.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Export & Implement</h3>
+                    <p class="step-description">
+                        Download your theme as JSON design tokens, ready to integrate
+                        into your codebase or design system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Portfolio -->
+    <section class="back-section">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.8332 10H4.1665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.99984 15.8333L4.1665 10L9.99984 4.16667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Portfolio
+        </a>
+    </section>
+
+    <a href="#top" class="scroll-top" aria-label="Scroll to top"><span>Scroll to top</span></a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">© 2025 David Budzik. Designed & developed in Tel Aviv.</div>
+        <div class="footer-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#process">Process</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/color-theme-generator.js"></script>
+</body>
+</html>
